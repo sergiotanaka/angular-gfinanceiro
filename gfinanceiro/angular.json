@@ -5,7 +5,14 @@
   "projects": {
     "gfinanceiro": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "prefix": "gf",
+          "spec": false,
+          "inlineStyle": true,
+          "export": true
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -120,6 +127,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "gfinanceiro"
 }
